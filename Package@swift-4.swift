@@ -28,18 +28,18 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/c-bata/zlib-spm.git", .branch("support-spm4")),
-        .package(url: "https://github.com/daltoniam/common-crypto-spm", .upToNextMinor(from: "1.1.0")),
+        .package(url: "https://github.com/c-bata/common-crypto-spm.git", .branch("support-spm4")),
     ],
     targets: [
         .target(
             name: "Starscream",
-            dependencies: ["SSCZLib"],
+            dependencies: ["SSCZLib", "SSCommonCrypto"],
             path: "",
             exclude: ["examples", "Tests"]
         ),
         .testTarget(
             name: "Tests",
-            dependencies: ["SSCZLib", "Starscream"],
+            dependencies: ["SSCZLib", "SSCommonCrypto", "Starscream"],
             path: "Tests",
             exclude: ["Tests"]
         ),

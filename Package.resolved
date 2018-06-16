@@ -5,18 +5,18 @@
         "package": "SSCZLib",
         "repositoryURL": "https://github.com/c-bata/zlib-spm.git",
         "state": {
-          "branch": "master",
+          "branch": "support-spm4",
           "revision": "0ae9a8ce2260b0a93feaca085e79302ea333978a",
           "version": null
         }
       },
       {
         "package": "SSCommonCrypto",
-        "repositoryURL": "https://github.com/daltoniam/common-crypto-spm",
+        "repositoryURL": "https://github.com/c-bata/common-crypto-spm.git",
         "state": {
-          "branch": null,
-          "revision": "2eb3aff0fb57f92f5722fac5d6d20bf64669ca66",
-          "version": "1.1.0"
+          "branch": "support-spm4",
+          "revision": "d5b645714304aec4cb0fee8dc958f35618d698dd",
+          "version": null
         }
       }
     ]
